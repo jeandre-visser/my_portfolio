@@ -1,5 +1,6 @@
 import React from 'react'
 import { About, Footer, Header, Projects, Skills, Testimonial } from './containers/index';
+import { Navbar } from './components';
 
 const App = () => {
   return (
