@@ -31,7 +31,7 @@ const Navbar = () => {
                 <HiX onClick={() => setToggle(false)} />
                 {['home', 'projects', 'skills', 'about', 'contact'].map((item) => (
                   <li className="app__flex p-text" key={item}>
-                    <a href={`#${item}`}>{item} onClick={() => setToggle(false)}</a>
+                    <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
                   </li>
                 ))}
               </motion.div>
