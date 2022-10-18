@@ -4,9 +4,22 @@ import { motion } from 'framer-motion';
 import { images } from '../../constants';
 
 const Header = () => {
+
+  const scaleVariants = {
+    whileInView: {
+      scale: [0, 1],
+      opacity: [1, 0],
+      transition: {
+        duration: 4, 
+        ease: 'easeInOut'
+      }
+    }
+  };
+
   return (
     <div className="app_header app_flex">
       <motion.div
+        className="app__header-info"
         whileInView={{ x: [-100, 0], opacity: [0, 1]}}
         transitions={{ duration: 4 }}
       >
@@ -23,6 +36,34 @@ const Header = () => {
             </div>
         </div>
       </motion.div>
+
+      <motion.div
+        className="app__header-img"
+        whileInView={{ opacity: [0, 1]}}
+        transitions={{ duration: 4, delayChildren: 2 }}      
+      >
+        <img src={images.profile} alt="profile_badge" />
+        <motion.img
+         className="overlay_circle"
+         whileInView={{ scale: [0, 1]}}
+         transitions={{ duration: 4, ease: 'easeInOut' }}
+         src={images.circle}
+         alt="profile_circle"     
+        />
+        <motion.div
+          variant={scaleVariants}
+          whileInView={scaleVariants.whileInView}
+          className="app__header-circles"
+        >
+          {[images.redux, images.sass].map((circle, index) => (
+            <div className="circle-cmp app__flex" key={`circle-${index}`}>
+              <img src={circle} alt="circle" />
+            </div> 
+          ))}
+        </motion.div>
+      </motion.div>
+
+
     </div>  
   )
 }
