@@ -2,15 +2,27 @@ import React, { useState, useEffect } from 'react';
 import './About.scss';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
+import { client, urlFor } from '../../client';
 
-const aboutMe = [
-  { title: 'Full-Stack Development', imgUrl: images.aboutMe01 },
-  { title: 'Front-End Development', imgUrl: images.aboutMe02 },
-  { title: 'UI/UX Design', imgUrl: images.aboutMe03 },
-  { title: 'Web Animations', imgUrl: images.aboutMe04 }
-];
+// const aboutMe = [
+//   { title: 'Full-Stack Development', imgUrl: images.aboutMe01 },
+//   { title: 'Front-End Development', imgUrl: images.aboutMe02 },
+//   { title: 'UI/UX Design', imgUrl: images.aboutMe03 },
+//   { title: 'Web Animations', imgUrl: images.aboutMe04 }
+// ];
 
 const About = () => {
+
+  const [aboutMe, setAboutMe] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "aboutMe"]';
+    client.fetch(query)
+    .then((data) => {
+      setAboutMe(data);
+    })
+  }, []);
+
   return (
     <>
     <h2 className="head-text" style={{marginTop: 100}}>
