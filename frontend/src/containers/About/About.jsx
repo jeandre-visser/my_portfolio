@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './About.scss';
 import { motion } from 'framer-motion';
-import { images } from '../../constants';
-import { client, urlFor } from '../../client';
+// import { images } from '../../constants';
+import { urlFor, client } from '../../client';
 
-// const aboutMe = [
+// const abouts = [
 //   { title: 'Full-Stack Development', imgUrl: images.aboutMe01 },
 //   { title: 'Front-End Development', imgUrl: images.aboutMe02 },
 //   { title: 'UI/UX Design', imgUrl: images.aboutMe03 },
@@ -13,15 +13,12 @@ import { client, urlFor } from '../../client';
 
 const About = () => {
 
-  const [aboutMe, setAboutMe] = useState([]);
+  const [abouts, setAbouts] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "aboutMe"]';
-    client.fetch(query)
-    .then((data) => {
-      setAboutMe(data);
-    })
-  }, []);
+    const query = '*[_type == "abouts"]';
+    client.fetch(query).then((data) => setAbouts(data))
+  }, [])
 
   return (
     <>
@@ -29,16 +26,16 @@ const About = () => {
       Aspiring Web Developer
     </h2>
     <div className="app__profiles">
-      {aboutMe.map((item, index) => (
+      {abouts.map((about, index) => (
         <motion.div
           whileInView={{ x: [-300, 0], opacity: [0, 1] }}
           transitions={{ duration: 2, type: 'tween' }}
-          key={aboutMe.title + index}
+          key={about.title + index}
           whileHover={{ scale: 1.05 }}
           className="app__profile-item"
         >
-          <img src={item.imgUrl} alt={item.title} />
-          <h2 className="bold-text" style={{ marginTop: 18}}>{item.title}</h2>
+          <img src={urlFor(about.imgUrl)} alt={about.title} />
+          <h2 className="bold-text" style={{ marginTop: 18}}>{about.title}</h2>
         </motion.div>
       ))}
     </div>
