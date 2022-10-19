@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './About.scss';
 import { motion } from 'framer-motion';
+import { images } from '../../constants';
 
 const aboutMe = [
-  { title: 'Full-Stack', description: 'I like to build things from front to back.', imgUrl: ''},
-  { title: 'Front-End', description: 'I like to make web pages look good', imgUrl: '' },
-  { title: 'Back-End', description: 'I like to build things', imgUrl: '' }
+  { title: 'Full-Stack', imgUrl: ''},
+  { title: 'Front-End', imgUrl: '' },
+  { title: 'UI/UX', imgUrl: '' },
+  { title: 'Animations', imgUrl: '' }
 ];
 
 const About = () => {
@@ -25,7 +27,6 @@ const About = () => {
         >
           <img src={item.imgUrl} alt={item.title} />
           <h2 className="bold-text" style={{ marginTop: 18}}>{item.title}</h2>
-          <p className="p-text" style={{ marginTop: 12}}>{item.description}</p>
         </motion.div>
       ))}
     </div>
