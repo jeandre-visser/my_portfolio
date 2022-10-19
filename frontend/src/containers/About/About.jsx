@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import { images } from '../../constants';
 
 const aboutMe = [
-  { title: 'Full-Stack', imgUrl: ''},
-  { title: 'Front-End', imgUrl: '' },
-  { title: 'UI/UX', imgUrl: '' },
-  { title: 'Animations', imgUrl: '' }
+  { title: 'Full-Stack', imgUrl: images.aboutMe01 },
+  { title: 'Front-End', imgUrl: images.aboutMe02 },
+  { title: 'UI/UX', imgUrl: images.aboutMe03 },
+  { title: 'Animations', imgUrl: images.aboutMe04 }
 ];
 
 const About = () => {
