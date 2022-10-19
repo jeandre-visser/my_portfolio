@@ -4,13 +4,6 @@ import { motion } from 'framer-motion';
 // import { images } from '../../constants';
 import { urlFor, client } from '../../client';
 
-// const abouts = [
-//   { title: 'Full-Stack Development', imgUrl: images.aboutMe01 },
-//   { title: 'Front-End Development', imgUrl: images.aboutMe02 },
-//   { title: 'UI/UX Design', imgUrl: images.aboutMe03 },
-//   { title: 'Web Animations', imgUrl: images.aboutMe04 }
-// ];
-
 const About = () => {
 
   const [abouts, setAbouts] = useState([]);
