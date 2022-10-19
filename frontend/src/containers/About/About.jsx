@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import { images } from '../../constants';
 
 const aboutMe = [
-  { title: 'Full-Stack', imgUrl: images.aboutMe01 },
-  { title: 'Front-End', imgUrl: images.aboutMe02 },
-  { title: 'UI/UX', imgUrl: images.aboutMe03 },
-  { title: 'Animations', imgUrl: images.aboutMe04 }
+  { title: 'Full-Stack Development', imgUrl: images.aboutMe01 },
+  { title: 'Front-End Development', imgUrl: images.aboutMe02 },
+  { title: 'UI/UX Design', imgUrl: images.aboutMe03 },
+  { title: 'Web Animations', imgUrl: images.aboutMe04 }
 ];
 
 const About = () => {
@@ -19,8 +19,8 @@ const About = () => {
     <div className="app__profiles">
       {aboutMe.map((item, index) => (
         <motion.div
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.4, type: 'tween' }}
+          whileInView={{ x: [-200, 0], opacity: [0, 1] }}
+          transitions={{ duration: 2, type: 'tween' }}
           key={aboutMe.title + index}
           whileHover={{ scale: 1.05 }}
           className="app__profile-item"
