@@ -67,4 +67,4 @@ const Header = () => {
   )
 };
 
-export default AppWrapper(Header, 'main');
+export default AppWrapper(Header, 'home');
