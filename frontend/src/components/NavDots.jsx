@@ -9,7 +9,6 @@ const NavDots = ( { active }) => {
           key={item + index}
           style={active === item ? {backgroundColor: '#000'} : '' }
         >
-          {item}
         </a>
       ))}
     </div>
