@@ -17,7 +17,7 @@ const About = () => {
   return (
     <>
     <h2 className="head-text">
-      Aspiring Web Developer with a Focus On:
+      Aspiring <span>web developer</span> with a <span style={{color: 'var(--orange-color'}}>focus</span> on:
     </h2>
     <div className="app__profiles">
       {abouts.map((about, index) => (
