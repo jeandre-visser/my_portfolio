@@ -2,6 +2,6 @@
 
 ### Check back later...
 
-![Giphy](https://giphy.com/embed/cge9nG7e7wKWbMm9cY)
+![https://giphy.com/embed/cge9nG7e7wKWbMm9cY](https://media.giphy.com/media/cge9nG7e7wKWbMm9cY/giphy.gif)
 
 
