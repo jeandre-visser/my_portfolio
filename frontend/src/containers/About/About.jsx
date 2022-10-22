@@ -16,7 +16,7 @@ const About = () => {
 
   return (
     <>
-    <h2 className="head-text" style={{marginTop: 100}}>
+    <h2 className="head-text">
       Aspiring Web Developer with a Focus On:
     </h2>
     <div className="app__profiles">
