@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavDots } from '..components/NavDots';
+import { NavDots } from '../components';
 
-const AppWrapper = (Component, classNames, idName) => function HOC() {
+const AppWrapper = (Component, idName, classNames) => function HOC() {
   return (
     <div className={`app__container ${classNames}`} id={idName}>
       <div className="app__wrapper app__flex">
