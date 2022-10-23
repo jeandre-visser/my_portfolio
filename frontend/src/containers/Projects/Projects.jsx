@@ -7,7 +7,6 @@ import { urlFor, client } from '../../client';
 
 const Projects = () => {
 
-  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
