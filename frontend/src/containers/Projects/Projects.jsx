@@ -74,4 +74,4 @@ const Projects = () => {
   )
 } 
 
-export default Projects
+export default AppWrapper(Projects, 'projects');
