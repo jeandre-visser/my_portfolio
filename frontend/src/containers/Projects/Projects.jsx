@@ -8,14 +8,14 @@ import { urlFor, client } from '../../client';
 const Projects = () => {
 
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
-  const [works, setWorks] = useState([]);
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "works"]';
+    const query = '*[_type == "projects"]';
 
     client.fetch(query)
     .then(data => {
-      setWorks(data);
+      setProjects(data);
     })
   }, [])
 
@@ -30,10 +30,10 @@ const Projects = () => {
       animate={animateCard}
       transition={{ duration: 1, delayChildren: 1}}
     >
-      {works.map((work, index) => (
+      {projects.map((project, index) => (
         <div className="app__project-item app__flex" key={index}>
           <div className="app__project-img app__flex">
-            <img src={urlFor(work.imgUrl)} alt={work.name} />
+            <img src={urlFor(project.imgUrl)} alt={project.name} />
           </div>    
         </div>
       ))}
