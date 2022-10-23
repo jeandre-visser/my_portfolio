@@ -41,9 +41,8 @@ const Projects = () => {
               <a href={project.projectLink} target="_blank" rel="noreferrer">
                 <motion.div
                   className="app__flex"
-                  whileInView={{ scale: [0, 1]}}
-                  whileHover={{ opacity: [1, 0.9]}}
-                  transition={{ duration: 0.25}}                
+                  whileHover={{ scale: [1, 0.85] }}
+                  transition={{ duration: 0.1}}                
                 >
                   <BsFillEyeFill />
                 </motion.div>
@@ -51,9 +50,8 @@ const Projects = () => {
               <a href={project.codeLink} target="_blank" rel="noreferrer">
                 <motion.div
                   className="app__flex"
-                  whileInView={{ scale: [0, 1]}}
-                  whileHover={{ opacity: [1, 0.9]}}
-                  transition={{ duration: 0.25}}                
+                  whileHover={{ scale: [1, 0.85] }}
+                  transition={{ duration: 0.1}}             
                 >
                   <BsGithub />
                 </motion.div>
@@ -63,7 +61,7 @@ const Projects = () => {
 
           <div className="app__flex app__project-content">
             <h4 className="bold-text">{project.title}</h4>
-            <p className="p-text" style={{ marginTop: 12 }}>{project.description}</p>
+            <p className="p-text" style={{ marginTop: 12, fontSize: '0.9rem' }}>{project.description}</p>
           </div>
         </div>
       ))}
