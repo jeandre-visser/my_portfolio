@@ -19,6 +19,23 @@
     border-radius: 0.5rem;
     background-color: #fff;
     color: black;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      box-shadow: 0px 0px 15px rgba(249, 149, 0, 0.5)
+    }
+
+    @media screen and (min-width: 2000px) {
+      width: 500px; 
+      border-radius: 0.8rem;
+      padding: 1.3rem;
+    }
+    
+    @media screen and (max-width: 350px) {
+      width: 100%; 
+      margin: 0.8rem
+    }
   }
 }
 
