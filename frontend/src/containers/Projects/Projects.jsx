@@ -46,11 +46,25 @@ const Projects = () => {
                   whileHover={{ opacity: [1, 0.9]}}
                   transition={{ duration: 0.5}}                
                 >
-
+                  <BsFillEyeFill />
+                </motion.div>
+              </a>
+              <a href={project.projectLink} target="_blank" rel="noreferrer">
+                <motion.div
+                  className="app__flex"
+                  whileInView={{ scale: [0, 1]}}
+                  whileHover={{ opacity: [1, 0.9]}}
+                  transition={{ duration: 0.5}}                
+                >
+                  <BsGithub />
                 </motion.div>
               </a>
             </motion.div>
-          </div>    
+          </div>
+
+          <div className="app__flex app__project-content">
+            <h4 className="bold-text">{project.title}</h4>
+          </div>
         </div>
       ))}
     </motion.div>
