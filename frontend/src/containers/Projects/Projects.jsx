@@ -34,6 +34,22 @@ const Projects = () => {
         <div className="app__project-item app__flex" key={index}>
           <div className="app__project-img app__flex">
             <img src={urlFor(project.imgUrl)} alt={project.name} />
+            <motion.div
+              className="app__project-hover app__flex"
+              whileHover={{ opacity: [0, 1]}}
+              transition={{ duration: 0.5, ease: 'easeInOut', staggerChildren: 1}}
+            >
+              <a href={project.projectLink} target="_blank" rel="noreferrer">
+                <motion.div
+                  className="app__flex"
+                  whileInView={{ scale: [0, 1]}}
+                  whileHover={{ opacity: [1, 0.9]}}
+                  transition={{ duration: 0.5}}                
+                >
+
+                </motion.div>
+              </a>
+            </motion.div>
           </div>    
         </div>
       ))}
