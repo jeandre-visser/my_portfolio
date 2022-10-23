@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Projects.scss';
 import { motion } from 'framer-motion';
-import { BsFillEyeFill, BsGithub } from 'react-icons/bs';
+import { BsGithub } from 'react-icons/bs';
+import { BiLink } from 'react-icons/bi';
 import { AppWrapper } from '../../wrapper';
 import { urlFor, client } from '../../client';
 
@@ -43,7 +44,7 @@ const Projects = () => {
                   whileHover={{ scale: [1, 0.85] }}
                   transition={{ duration: 0.1}}                
                 >
-                  <BsFillEyeFill />
+                  <BiLink />
                 </motion.div>
               </a>
               <a href={project.codeLink} target="_blank" rel="noreferrer">
