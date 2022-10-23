@@ -27,7 +27,6 @@ const Projects = () => {
 
     <motion.div
       className="app__project-portfolio"
-      animate={animateCard}
       transition={{ duration: 1, delayChildren: 1}}
     >
       {projects.map((project, index) => (
@@ -37,24 +36,24 @@ const Projects = () => {
             <motion.div
               className="app__project-hover app__flex"
               whileHover={{ opacity: [0, 1]}}
-              transition={{ duration: 0.5, ease: 'easeInOut', staggerChildren: 1}}
+              transition={{ duration: 0.1, ease: 'easeInOut', staggerChildren: 1}}
             >
               <a href={project.projectLink} target="_blank" rel="noreferrer">
                 <motion.div
                   className="app__flex"
                   whileInView={{ scale: [0, 1]}}
                   whileHover={{ opacity: [1, 0.9]}}
-                  transition={{ duration: 0.5}}                
+                  transition={{ duration: 0.25}}                
                 >
                   <BsFillEyeFill />
                 </motion.div>
               </a>
-              <a href={project.projectLink} target="_blank" rel="noreferrer">
+              <a href={project.codeLink} target="_blank" rel="noreferrer">
                 <motion.div
                   className="app__flex"
                   whileInView={{ scale: [0, 1]}}
                   whileHover={{ opacity: [1, 0.9]}}
-                  transition={{ duration: 0.5}}                
+                  transition={{ duration: 0.25}}                
                 >
                   <BsGithub />
                 </motion.div>
