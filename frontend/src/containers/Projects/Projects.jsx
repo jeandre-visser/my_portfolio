@@ -7,11 +7,21 @@ import { urlFor, client } from '../../client';
 
 const Projects = () => {
 
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+
   return (
     <>
     <h2 className="head-text">
       My <span>Projects</span> 
     </h2>
+
+    <motion.div
+      className="app__project-portfolio"
+      animate={animateCard}
+      transition={{ duration: 1, delayChildren: 1}}
+    >
+
+    </motion.div>
 
     </>
   )
