@@ -64,6 +64,7 @@ const Projects = () => {
 
           <div className="app__flex app__project-content">
             <h4 className="bold-text">{project.title}</h4>
+            <p className="p-text" style={{ marginTop: 12 }}>{project.description}</p>
           </div>
         </div>
       ))}
