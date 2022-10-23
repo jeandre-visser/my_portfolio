@@ -1,0 +1,23 @@
+.app__projects {
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+}
+
+.app__project-portfolio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .app__project-item {
+    flex-direction: column;
+    width: 300px;
+
+    margin: 2.2rem;
+    padding: 1.1rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: black;
+  }
+}
