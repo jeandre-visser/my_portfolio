@@ -55,3 +55,36 @@
     height: 400px;
   }
 }
+
+.app__project-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: all 0.2s ease;
+
+  div {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+    font-family: var(--font-base);
+    margin: 1rem;
+    cursor:  pointer;
+    font-weight: 700;
+    transition: all 0.2s ease;
+
+    svg {
+      width: 60%;
+      height: 60%;
+      color: var(--orange-color);
+    }
+  }
+}
