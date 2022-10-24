@@ -1,5 +1,6 @@
 import './Skills.scss';
 import React, { useState, useEffect } from 'react';
+import ReactTooltip from 'react-tooltip';
 import { motion } from 'framer-motion';
 import { BsGithub } from 'react-icons/bs';
 import { BiLink } from 'react-icons/bi';
@@ -8,7 +9,16 @@ import { urlFor, client } from '../../client';
 
 const Skills = () => {
   return (
-    <div>Skills</div>
+    <>
+      <h2 className="head-text">
+        <span>Discover</span> My Skills 
+      </h2>
+      <div className="app__skills-container">
+        <motion.div className="app__skills-list">
+
+        </motion.div>
+      </div>
+    </>
   )
 }
 
