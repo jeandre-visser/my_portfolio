@@ -5,6 +5,8 @@ import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
 import bgIMG from '../assets/bgIMG.png';
 import react from '../assets/react.png';
+import cenovus from '../assets/cenovus.png';
+import terra from '../assets/terra.png';
 import aboutMe01 from '../assets/aboutMe01.png';
 import aboutMe02 from '../assets/aboutMe02.png';
 import aboutMe03 from '../assets/aboutMe03.png';
@@ -18,6 +20,8 @@ export default {
   sass,
   react,
   bgIMG,
+  cenovus,
+  terra,
   aboutMe01,
   aboutMe02,
   aboutMe03,
