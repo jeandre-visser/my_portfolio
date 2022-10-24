@@ -1,5 +1,6 @@
 import logo from '../assets/logo.png';
 import profile from '../assets/profile.png';
+import ring from '../assets/ring.png';
 import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
 import bgIMG from '../assets/bgIMG.png';
@@ -12,6 +13,7 @@ import aboutMe04 from '../assets/aboutMe04.gif';
 export default {
   logo,
   profile,
+  ring,
   redux,
   sass,
   react,
