@@ -23,6 +23,10 @@
     @media screen and (min-width: 2000px){
       width: 300px;
     }
+
+    @media screen and (max-width: 1075px){
+      width: 150px;
+    }
   }
 }
 
@@ -66,9 +70,13 @@
         transform: translate3d(0, 0.2em, 0);
       }
     }
+
+    @media screen and (max-width: 1200px) {
+      margin: 0 1rem;
+    }
   }
 
-  @media screen and (max-width: 910px){
+  @media screen and (max-width: 975px){
     display: none;
   }
 }
@@ -144,12 +152,12 @@
         }
       }
     }
-    @media screen and (min-width: 910px) {
+    @media screen and (min-width: 975px) {
       display: none;
     }
   }
 
-  @media screen and (min-width: 910px) {
+  @media screen and (min-width: 975px) {
     display: none;
   }
 }
