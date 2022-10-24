@@ -8,6 +8,19 @@ import { AppWrapper } from '../../wrapper';
 import { urlFor, client } from '../../client';
 
 const Skills = () => {
+
+  const [skills, setSkills] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "skills"]';
+
+    client.fetch(query)
+    .then(data => {
+      setSkills(data);
+    })
+  }, [])
+
+
   return (
     <>
       <h2 className="head-text">
@@ -15,7 +28,7 @@ const Skills = () => {
       </h2>
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
-
+    
         </motion.div>
       </div>
     </>
