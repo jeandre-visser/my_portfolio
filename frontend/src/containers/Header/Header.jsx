@@ -43,12 +43,13 @@ const Header = () => {
         whileInView={{ opacity: [0, 1]}}
         transitions={{ duration: 4, delayChildren: 2 }}      
       >
+        <img src={images.profile} alt="profile_logo" />
         <motion.img
-         className="profile_badge"
+         className="profile_ring"
          whileInView={{ scale: [0, 1]}}
          transitions={{ duration: 4, ease: 'easeInOut' }}
-         src={images.profile}
-         alt="profile_badge"     
+         src={images.ring}
+         alt="profile_ring"     
         />
       </motion.div>
 

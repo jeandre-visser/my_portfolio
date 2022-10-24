@@ -177,8 +177,24 @@
     }
   }
 
+  .profile_ring {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    animation: spin 15s infinite;
+    animation-timing-function: linear;
+  }
+
   @media screen and (max-width: 1200px) {
     margin: 2.5rem 0;
   }
 }
 
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
