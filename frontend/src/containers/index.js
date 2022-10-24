@@ -4,5 +4,5 @@ export { default as Header } from './Header/Header';
 export { default as Projects } from './Projects/Projects';
 export { default as Skills } from './Skills/Skills';
 export { default as Education } from './Education/Education';
-export { default as Experience } from './Experience/Experience';
+export { default as Employment } from './Employment/Employment';
 export { default as Testimonial } from './Testimonial/Testimonial';
