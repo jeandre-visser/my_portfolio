@@ -1,10 +1,10 @@
 import React from 'react';
-import './Experience.scss';
+import './Employment.scss';
 
-const Experience = () => {
+const Employment = () => {
   return (
-    <div>Experience</div>
+    <div>Employment</div>
   )
 }
 
-export default Experience
+export default Employment
