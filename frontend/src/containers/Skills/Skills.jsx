@@ -28,14 +28,17 @@ const Skills = () => {
       </h2>
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
-          {Skills.map((skill) => (
+          {skills.map((skill) => (
             <motion.div
               className="app__skills-item app__flex"
               transition={{ duration: 0.25}}
               whileInView={{ opacity: [0, 1]}}
               key={skill.name}
             >
-              
+              <div className="app__flex" style={{ backgroundColor: skill.bgColor }}>
+                <img src={urlFor(skill.icon)} alt={skill.name} />
+              </div>
+              <p className="p-text">{skill.name}</p>
             </motion.div>
           ))}
         </motion.div>
