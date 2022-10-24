@@ -1,6 +1,5 @@
 import './Skills.scss';
 import React, { useState, useEffect } from 'react';
-import ReactTooltip from 'react-tooltip';
 import { motion } from 'framer-motion';
 import { AppWrapper } from '../../wrapper';
 import { urlFor, client } from '../../client';
