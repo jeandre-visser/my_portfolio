@@ -1,11 +1,13 @@
 import './Employment.scss';
 import React from 'react';
 import { motion } from 'framer-motion';
+import { images } from '../../constants';
 import { AppWrapper } from '../../wrapper';
 
+
 const jobs = [
-  { title: 'Junior Project Manager', company: 'Terralogix Solutions Inc.', industry: 'Environmental Services', year: '2020 - 2021', location: 'Edmonton, Alberta, Canada', imgUrl: {}},
-  { title: 'Junior Operator - Summer Terms', company: 'Cenovus Energy', industry: 'Oil and Gas', year: '2017 - 2019', location: 'Alberta, Canada', imgUrl: {}},
+  { title: 'Junior Project Manager', company: 'Terralogix Solutions Inc.', industry: 'Environmental Services', year: '2020 - 2021', location: 'Edmonton, Alberta, Canada', imgUrl: images.terra},
+  { title: 'Junior Operator - Summer Terms', company: 'Cenovus Energy', industry: 'Oil and Gas', year: '2017 - 2019', location: 'Alberta, Canada', imgUrl: images.cenovus},
 ]
 
 const Employment = () => {
@@ -13,7 +15,7 @@ const Employment = () => {
   return (
     <>
       <h2 className="head-text"><span>Employment  </span>History</h2>
-      <div className="app__employment">
+      <div className="app__employment app__flex">
         {jobs.map((job, index) => (
           <motion.div
             className="app__employment-item"
@@ -36,4 +38,4 @@ const Employment = () => {
   )
 }
 
-export default Employment
+export default AppWrapper(Employment, 'employment');
