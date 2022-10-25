@@ -4,30 +4,29 @@ import { motion } from 'framer-motion';
 import { images } from '../../constants';
 import { AppWrapper } from '../../wrapper';
 
-const school = [
-  { institution: 'Lighthouse Labs', program: 'Diploma of Full-Stack Web Development', year: '2022', location: 'Calgary, Alberta, Canada', imgUrl: images.terra },
-  { institution: 'University of Alberta', program: 'BSc. of ENvironmental Sciences', year: '2020', location: 'Edmonton, Alberta, Canada', imgUrl: images.terra},
+const schools = [
+  { institution: 'Lighthouse Labs', program: 'Diploma of Full-Stack Web Development', year: '2022', location: 'Calgary, Alberta, Canada', imgUrl: images.lhl },
+  { institution: 'University of Alberta', program: 'B.Sc of Environmental Sciences', year: '2020', location: 'Edmonton, Alberta, Canada', imgUrl: images.uofa},
 ]
 
 const Education = () => {
   return (
     <>
-      <h2 className="head-text"><span>Employment  </span>History</h2>
-      <div className="app__employment app__flex">
-        {jobs.map((job, index) => (
+      <h2 className="head-text">My <span style={{ color: 'var(--orange-color'}}>Education</span></h2>
+      <div className="app__education app__flex">
+        {schools.map((school, index) => (
           <motion.div
-            className="app__employment-item"
-            whileInView={{ x: [300, 0], opacity: [0, 1] }}
+            className="app__education-item"
+            whileInView={{ x: [-300, 0], opacity: [0, 1] }}
             transitions={{ duration: 2, type: 'tween' }}
-            key={job.title + index}
+            key={school + index}
           >
-            <p className="p-text">{job.year}</p>
-            <img src={job.imgUrl} alt={job.title} />
-            <div className="app__employment-desc">
-              <h2 className="bold-text">{job.title}</h2>
-              <p className="p-text">{job.company}</p>
-              <p className="p-text">{job.industry}</p>
-              <p className="p-text">{job.location}</p>
+            <p className="p-text">{school.year}</p>
+            <img src={school.imgUrl} alt={school.institution} />
+            <div className="app__education-desc">
+              <h2 className="bold-text">{school.institution}</h2>
+              <p className="p-text">{school.program}</p>
+              <p className="p-text">{school.location}</p>
             </div>
           </motion.div>
         ))}
