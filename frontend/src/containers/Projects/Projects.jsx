@@ -28,6 +28,7 @@ const Projects = () => {
     <motion.div
       className="app__project-portfolio"
       transition={{ duration: 1, delayChildren: 1}}
+      whileInView={{ y: [250, 0], opacity: [0, 1] }}
     >
       {projects.map((project, index) => (
         <div className="app__project-item app__flex" key={index}>
