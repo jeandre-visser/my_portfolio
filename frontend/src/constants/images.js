@@ -13,6 +13,7 @@ import aboutMe01 from '../assets/aboutMe01.png';
 import aboutMe02 from '../assets/aboutMe02.png';
 import aboutMe03 from '../assets/aboutMe03.png';
 import aboutMe04 from '../assets/aboutMe04.gif';
+import portrait from '../assets/portrait.png';
 
 export default {
   logo,
@@ -22,6 +23,7 @@ export default {
   lhl,
   uofa,
   sass,
+  portrait,
   react,
   bgIMG,
   cenovus,
