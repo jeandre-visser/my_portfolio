@@ -7,6 +7,8 @@ import bgIMG from '../assets/bgIMG.png';
 import react from '../assets/react.png';
 import cenovus from '../assets/cenovus.png';
 import terra from '../assets/terra.png';
+import lhl from '../assets/lhl.png';
+import uofa from '../assets/uofa.png';
 import aboutMe01 from '../assets/aboutMe01.png';
 import aboutMe02 from '../assets/aboutMe02.png';
 import aboutMe03 from '../assets/aboutMe03.png';
