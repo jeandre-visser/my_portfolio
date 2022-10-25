@@ -27,8 +27,8 @@ const Projects = () => {
 
     <motion.div
       className="app__project-portfolio"
-      transition={{ duration: 1, delayChildren: 1}}
-      whileInView={{ y: [250, 0], opacity: [0, 1] }}
+      transition={{ duration: 1, ease: 'easeInOut', delayChildren: 1}}
+      whileInView={{ y: [200, 0], opacity: [0, 1] }}
     >
       {projects.map((project, index) => (
         <div className="app__project-item app__flex" key={index}>
@@ -37,7 +37,7 @@ const Projects = () => {
             <motion.div
               className="app__project-hover app__flex"
               whileHover={{ opacity: [0, 1]}}
-              transition={{ duration: 0.1, ease: 'easeInOut', staggerChildren: 1}}
+              transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 1}}
             >
               <a href={project.projectLink} target="_blank" rel="noreferrer">
                 <motion.div
