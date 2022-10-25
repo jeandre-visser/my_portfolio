@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: row;
   padding: 2rem 3rem;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px rgba(5, 123, 233, 0.2);
   border-radius: 1rem;
   align-items: center;
   justify-content: flex-start;
@@ -18,12 +18,77 @@
   margin-bottom: 4rem;
   gap: 6rem;
 
+  @media screen and (max-width: 1100px) {
+    width: 800px;
+    gap: 2rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 600px;
+    padding: 1rem 2rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 450px) {
+    gap: 0.9rem;
+    width: 300px;
+  }
+
   img {
     margin: 0 2rem;
     width: 200px;
+
+    @media screen and (max-width: 1100px) {
+      width: 150px;
+    }
+
+    @media screen and (max-width: 900px) {
+      width: 100px;
+    }
+
+    @media screen and (max-width: 750px) {
+      display: none;
+    }
   }  
+
+  p {
+    @media screen and (max-width: 900px) {
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 0.7rem;
+    }
+  }
 }
 
 .app__employment-desc {
   line-height: 3;
+
+  h2 {
+    @media screen and (max-width: 900px) {
+      margin-bottom: 0.5rem;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 0.9rem;
+    }
+  }
+
+  p {
+    @media screen and (max-width: 900px) {
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 0.7rem;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    line-height: 1.1;
+  }
 }
