@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './About.scss';
 import { motion } from 'framer-motion';
-// import { images } from '../../constants';
+import { images } from '../../constants';
 import { urlFor, client } from '../../client';
 import { AppWrapper } from '../../wrapper';
 
@@ -33,6 +33,17 @@ const About = () => {
         </motion.div>
       ))}
     </div>
+    <motion.div className="app__flex app__about-desc"
+      whileInView={{ x: [300, 0], opacity: [0, 1] }}
+      transitions={{ duration: 2, type: 'tween' }}
+    >
+      <div className="app__about-portrait">
+        <img src={images.portrait} alt='portrait' id="portrait"/>
+        <h2>Hello <span><img id="wave" src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" alt='wave'/></span></h2>
+      </div>
+
+      <p className='p-text'>My name is <strong>Jeandre Visser</strong> I am in search of a career in full-stack or front-end development. I am eager to continue learning and collaborate with other developers of various experience levels. I am a graduate from <a href="https://www.lighthouselabs.ca/">Lighthouse Labs</a>, a program that involved a fast-paced learning environment comprised of small to large projects using popular front and back-end languages. I am also a former project manager at an environmental engineering consulting company with transferable skills in problem-solving and project management that will help to kickstart a new career in programming!</p>
+    </motion.div>
     </>
   )
 }
