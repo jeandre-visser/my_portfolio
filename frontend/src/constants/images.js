@@ -19,6 +19,8 @@ export default {
   profile,
   ring,
   redux,
+  lhl,
+  uofa,
   sass,
   react,
   bgIMG,
