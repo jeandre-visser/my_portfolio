@@ -21,7 +21,7 @@ const Employment = () => {
             className="app__employment-item"
             whileInView={{ x: [300, 0], opacity: [0, 1] }}
             transitions={{ duration: 2, type: 'tween' }}
-            key={job.title + index}
+            key={job + index}
           >
             <p className="p-text">{job.year}</p>
             <img src={job.imgUrl} alt={job.title} />
