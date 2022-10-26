@@ -15,13 +15,16 @@ const Contact = () => {
   return (
     <>
       <h2 className="head-text" id="heading">Get in <span style={{ color: 'var(--orange-color'}}>touch</span></h2>
-      <div className="app__contacts">
+      <motion.div className="app__contacts" 
+        transition={{ duration: 1, ease: 'easeInOut' }}
+        whileInView={{ y: [200, 0], opacity: [0, 1] }}
+      >
         {contacts.map((contact, index) => (
           <motion.div 
-          className="app__contact-card" 
-          transition={{ duration: 1, ease: 'easeInOut' }}
-          whileInView={{ y: [200, 0], opacity: [0, 1] }}
-          key={contact + index}
+            className="app__contact-card" 
+            key={contact + index}
+            whileHover={{ scale: [1, 1.05] }}
+            transition={{ duration: 0.1}}
           >
             <a href={contact.url}>
               <img src={contact.img} alt="contact-img"></img>
@@ -29,7 +32,7 @@ const Contact = () => {
             <h3>{contact.title}</h3>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
       <motion.div
         className="app__footer"
         transition={{ duration: 2, ease: 'easeInOut'}}
