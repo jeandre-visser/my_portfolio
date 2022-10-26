@@ -19,7 +19,6 @@ import phone from '../assets/phone.png';
 import github from '../assets/github.png';
 import resume from '../assets/resume.png';
 import linkedin from '../assets/linkedin.png';
-import mailgif from '../assets/mailgif.gif';
 
 export default {
   logo,
@@ -43,5 +42,4 @@ export default {
   github,
   resume,
   linkedin,
-  mailgif,
 };
