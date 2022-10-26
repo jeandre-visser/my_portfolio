@@ -16,7 +16,7 @@ const About = () => {
 
   return (
     <>
-    <h2 className="head-text">
+    <h2 className="head-text" id="heading">
       Aspiring <span>web developer</span> with a <span style={{color: 'var(--orange-color'}}>focus</span> on:
     </h2>
     <div className="app__profiles">
@@ -39,7 +39,7 @@ const About = () => {
     >
       <div className="app__about-portrait">
         <img src={images.portrait} alt='portrait' id="portrait"/>
-        <h2 id="heading">Hello <span><img id="wave" src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" alt='wave'/></span></h2>
+        <h2>Hello <span><img id="wave" src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" alt='wave'/></span></h2>
       </div>
 
       <p className='p-text'>My name is <strong>Jeandre Visser</strong>, I am in search of a career in full-stack or front-end development. I am eager to continue learning and collaborate with other developers of various experience levels. I am a graduate from <a href="https://www.lighthouselabs.ca/">Lighthouse Labs</a>, a program that involved a fast-paced learning environment comprised of small to large projects using popular front and back-end languages. I am also a former project manager at an environmental engineering consulting company with transferable skills in problem-solving and project management that will help to kickstart a new career in programming!</p>
