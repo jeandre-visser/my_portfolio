@@ -3,38 +3,77 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-start;
   padding: 5rem 2rem;
 
   div:nth-child(1) {
     margin-top: 12rem;
+
+    @media screen and (max-width: 750px) {
+      margin: 0;
+    }
   }
 
   div:nth-child(3) {
     margin-top: 12rem;
+
+    @media screen and (max-width: 750px) {
+      margin: 0;
+    }
   }
 
   div:nth-child(5) {
     margin-top: 12rem;
+
+    @media screen and (max-width: 750px) {
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
   }
 
 }
 
 .app__contact-card {
-  margin-bottom: 1rem;
+  
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  width: 200px;
+  width: auto;
+
+  @media screen and (max-width: 750px) {
+    position: relative;
+    align-items: center;
+    gap: 1rem;
+  }
 
   img {
     width: 150px;
+
+    @media screen and (max-width: 900px) {
+      width: 120px;
+    }
+
+    @media screen and (max-width: 750px) {
+      width: 70px;
+    }
   }
 
-  h2 {
-    word-break: break-all;
+  h3 {
     text-align: center;
+
+    @media screen and (max-width: 900px) {
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: 750px) {
+      font-size: 0.8rem;
+    }
   }
 }
 
