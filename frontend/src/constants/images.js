@@ -14,6 +14,12 @@ import aboutMe02 from '../assets/aboutMe02.png';
 import aboutMe03 from '../assets/aboutMe03.png';
 import aboutMe04 from '../assets/aboutMe04.gif';
 import portrait from '../assets/portrait.png';
+import email from '../assets/email.png';
+import phone from '../assets/phone.png';
+import github from '../assets/github.png';
+import resume from '../assets/resume.png';
+import linkedin from '../assets/linkedin.png';
+import mailgif from '../assets/mailgif.gif';
 
 export default {
   logo,
@@ -31,5 +37,11 @@ export default {
   aboutMe01,
   aboutMe02,
   aboutMe03,
-  aboutMe04
+  aboutMe04,
+  email,
+  phone,
+  github,
+  resume,
+  linkedin,
+  mailgif,
 };
