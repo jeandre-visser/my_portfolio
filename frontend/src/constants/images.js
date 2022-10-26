@@ -1,6 +1,5 @@
 import logo from '../assets/logo.png';
 import profile from '../assets/profile.png';
-import profile2 from '../assets/profile2.png';
 import ring from '../assets/ring.png';
 import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
@@ -25,7 +24,6 @@ import footer from '../assets/footer.png';
 export default {
   logo,
   profile,
-  profile2,
   ring,
   redux,
   lhl,
