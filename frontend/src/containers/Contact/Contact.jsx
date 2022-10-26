@@ -6,9 +6,9 @@ import './Contact.scss';
 const contacts = [
   {title: 'LinkedIn', url: 'http://www.linkedin.com/in/jeandre-visser', img: images.linkedin},
   {title: "GitHub", url: 'https://www.github.com/jeandre-visser', img: images.github},
-  {title: 'jeandrev1414@gmail.com', url: '', img: images.email},
+  {title: 'jeandrev1414@gmail.com', img: images.email},
   {title: 'Resume', url: 'https://resume.creddle.io/resume/9fih5w59z8y', img: images.resume},
-  {title: '639-840-1087', url: '', img: images.phone},
+  {title: '639-840-1087', img: images.phone},
 ]
 
 const Contact = () => {
@@ -20,7 +20,7 @@ const Contact = () => {
           <motion.div 
           className="app__contact-card" 
           transition={{ duration: 1, ease: 'easeInOut' }}
-          whileInView={{ opacity: [0, 1] }}
+          whileInView={{ y: [200, 0], opacity: [0, 1] }}
           key={contact + index}
           >
             <a href={contact.url}>
@@ -32,7 +32,7 @@ const Contact = () => {
       </div>
       <motion.div
         className="app__footer"
-        transition={{ duration: 1, ease: 'easeInOut'}}
+        transition={{ duration: 2, ease: 'easeInOut'}}
         whileInView={{ opacity: [0, 1] }}
       >
         <img src={images.footer} alt='logo'/>
