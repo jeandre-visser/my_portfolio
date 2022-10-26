@@ -14,7 +14,7 @@ const Employment = () => {
 
   return (
     <>
-      <h2 className="head-text"><span>Employment  </span>History</h2>
+      <h2 className="head-text" id="heading"><span>Employment  </span>History</h2>
       <div className="app__employment app__flex">
         {jobs.map((job, index) => (
           <motion.div

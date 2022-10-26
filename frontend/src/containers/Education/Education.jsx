@@ -12,7 +12,7 @@ const schools = [
 const Education = () => {
   return (
     <>
-      <h2 className="head-text">My <span style={{ color: 'var(--orange-color'}}>Education</span></h2>
+      <h2 className="head-text" id="heading">My <span style={{ color: 'var(--orange-color'}}>Education</span></h2>
       <div className="app__education app__flex">
         {schools.map((school, index) => (
           <motion.div
