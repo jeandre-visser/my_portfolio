@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import './Contact.scss';
 
 const contacts = [
-  {title: 'LinkedIn', url: 'http://www.linkedin.com/in/jeandre-visser', img: images.linkedin},
+  {title: 'Resume', url: 'https://resume.creddle.io/resume/9fih5w59z8y', img: images.resume},
   {title: "GitHub", url: 'https://www.github.com/jeandre-visser', img: images.github},
   {title: 'jeandrev1414@gmail.com', img: images.email},
-  {title: 'Resume', url: 'https://resume.creddle.io/resume/9fih5w59z8y', img: images.resume},
+  {title: 'LinkedIn', url: 'http://www.linkedin.com/in/jeandre-visser', img: images.linkedin},
   {title: '639-840-1087', img: images.phone},
 ]
 
