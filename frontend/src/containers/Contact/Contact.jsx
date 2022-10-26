@@ -6,7 +6,7 @@ import './Contact.scss';
 const contacts = [
   {title: 'Resume', url: 'https://resume.creddle.io/resume/9fih5w59z8y', img: images.resume},
   {title: "GitHub", url: 'https://www.github.com/jeandre-visser', img: images.github},
-  {title: 'jeandrev1414@gmail.com', img: images.email},
+  {title: 'Email', url: 'mailto:jeandrev1414@gmail.com', img: images.email},
   {title: 'LinkedIn', url: 'http://www.linkedin.com/in/jeandre-visser', img: images.linkedin},
   {title: '639-840-1087', img: images.phone},
 ]
@@ -24,7 +24,7 @@ const Contact = () => {
             className="app__contact-card" 
             key={contact + index}
             whileHover={{ scale: [1, 1.05] }}
-            transition={{ duration: 0.1}}
+            transition={{ duration: 0.1 }}
           >
             <a href={contact.url}>
               <img src={contact.img} alt="contact-img"></img>
