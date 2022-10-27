@@ -8,7 +8,7 @@ const contacts = [
   {title: "GitHub", url: 'https://www.github.com/jeandre-visser', img: images.github},
   {title: 'Email', url: 'mailto:jeandrev1414@gmail.com', img: images.email},
   {title: 'LinkedIn', url: 'http://www.linkedin.com/in/jeandre-visser', img: images.linkedin},
-  {title: '639-840-1087', img: images.phone},
+  {title: '+1 639-840-1087', img: images.phone},
 ]
 
 const Contact = () => {
