@@ -7,7 +7,7 @@ import { AppWrapper } from '../../wrapper';
 
 const jobs = [
   { title: 'Junior Project Manager', company: 'Terralogix Solutions Inc.', industry: 'Environmental Services', year: '2020 - 2021', location: 'Edmonton, Alberta, Canada', imgUrl: images.terra, shadow: "0px 0px 25px rgba(24, 67, 105, 1)" },
-  { title: 'Junior Operator', company: 'Cenovus Energy', industry: 'Oil and Gas Operations', year: '2017 - 2019', location: 'Central Alberta, Canada', imgUrl: images.cenovus, shadow: "0px 0px 25px rgba(0, 126, 68, 1)" },
+  { title: 'Junior Operator', company: 'Cenovus Energy', industry: 'Oil and Gas Operations', year: '2017 - 2019', location: 'Central Alberta, Canada', imgUrl: images.cenovus, shadow: "0px 0px 25px rgba(183, 103, 27, 1)" },
 ]
 
 const Employment = () => {
