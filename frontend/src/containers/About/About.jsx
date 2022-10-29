@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { images } from '../../constants';
 import { urlFor, client } from '../../client';
 import { AppWrapper } from '../../wrapper';
-import { MdLocationPin } from 'react-icons/md';
+import { IoLocationSharp } from 'react-icons/to';
 
 const About = () => {
 
