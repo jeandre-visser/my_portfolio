@@ -31,7 +31,7 @@ const Projects = () => {
       whileInView={{ y: [200, 0], opacity: [0, 1] }}
     >
       {projects.map((project, index) => (
-        <div className="app__project-item app__flex" key={index}>
+        <div className="app__project-item app__flex" key={index} style={{ boxShadow: `${project.shadow}`}}>
           <div className="app__project-img app__flex">
             <img src={urlFor(project.imgUrl)} alt={project.name} />
             <motion.div
