@@ -41,7 +41,7 @@ const About = () => {
       <div className="app__about-portrait">
         <img src={images.portrait} alt='portrait' id="portrait"/>
         <h2>Hello <span><img id="wave" src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" alt='wave'/></span></h2>
-        <p className='p-text app__flex'><GoLocation />Calgary, Alberta</p>
+        <p className='app__flex'><GoLocation />Calgary, Alberta</p>
         
       </div>
 
