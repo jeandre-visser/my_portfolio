@@ -9,6 +9,10 @@ const Navbar = () => {
 
   const [isOpen, setOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setOpen(!isOpen);
+  };
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo" >
@@ -23,17 +27,17 @@ const Navbar = () => {
       </ul>
 
       <div className="app__navbar-menu">
-          <HiOutlineMenu onClick={() => setToggle(true)} />
-            {toggle && (
+          <Hamburger onClick={toggleMenu} />
+            {isOpen && (
           <motion.div
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.9, ease: 'easeOut' }}
           >
-            <HiX onClick={() => setToggle(false)} />
+            <HiX onClick={() => setOpen(false)} />
             <ul>
               {['home', 'about', 'skills', 'projects', 'education', 'employment', 'contact'].map((item) => (
                 <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                  <a href={`#${item}`} onClick={() => setOpen(false)}>
                     {item}
                   </a>
                 </li>
