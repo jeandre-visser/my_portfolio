@@ -3,6 +3,7 @@ import { images } from '../../constants';
 import './Navbar.scss'
 import { motion } from 'framer-motion';
 import { HiOutlineMenu, HiX } from 'react-icons/hi';
+import Hamburger from 'hamburger-react';
 
 const Navbar = () => {
 
