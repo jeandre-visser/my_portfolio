@@ -7,7 +7,7 @@ import Hamburger from 'hamburger-react';
 
 const Navbar = () => {
 
-  const [toggle, setToggle] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <nav className="app__navbar">
