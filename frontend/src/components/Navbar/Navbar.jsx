@@ -2,7 +2,13 @@ import React, { useState } from 'react'
 import { images } from '../../constants';
 import './Navbar.scss'
 import { motion } from 'framer-motion';
-import  Hamburger from 'hamburger-react'
+import  Hamburger from 'hamburger-react';
+
+
+const variants = {
+  open: { opacity: 1, x: 0, transition: {duration: 0.9, ease: 'easeOut'}},
+  closed: { opacity: 0, x: "-100%", transition: { duration: 0.9, ease: 'easeOut'}}
+}
 
 const Navbar = () => {
 
@@ -36,8 +42,10 @@ const Navbar = () => {
         <div className="app__navbar-menu" onClick={toggleMenu}>
             {open && (
             <motion.div
-              whileInView={{ x: [-300, 0] }}
-              transition={{ duration: 0.9, ease: 'easeOut' }}
+            animate={open ? "open" : "closed"}
+            variants={variants}
+              // whileInView={{ x: [-300, 0] }}
+              // transition={{ duration: 0.9, ease: 'easeOut' }}
             >
               <ul>
                 {['home', 'about', 'skills', 'projects', 'education', 'employment', 'contact'].map((item) => (
