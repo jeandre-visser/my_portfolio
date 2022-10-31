@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import { images } from '../../constants';
 import './Navbar.scss'
 import { motion } from 'framer-motion';
-import { HiOutlineMenu, HiX } from 'react-icons/hi';
-import {Spiral as Hamburger} from 'hamburger-react'
+import  Hamburger from 'hamburger-react'
 
 const Navbar = () => {
 
@@ -26,30 +25,32 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <Hamburger
-        rounded
-        toggled={open} 
-        toggle={setOpen} 
-        easing="ease-in"
-      />
 
-      <div className="app__navbar-menu" onClick={toggleMenu}>
-          {open && (
-          <motion.div
-            whileInView={{ x: [-300, 0] }}
-            transition={{ duration: 0.9, ease: 'easeOut' }}
-          >
-            <ul>
-              {['home', 'about', 'skills', 'projects', 'education', 'employment', 'contact'].map((item) => (
-                <li key={item}>
-                  <a href={`#${item}`} onClick={toggleMenu}>
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        )}
+      <div>
+        <Hamburger
+          rounded
+          toggled={open} 
+          toggle={setOpen} 
+          easing="ease-in"
+        />
+        <div className="app__navbar-menu" onClick={toggleMenu}>
+            {open && (
+            <motion.div
+              whileInView={{ x: [-300, 0] }}
+              transition={{ duration: 0.9, ease: 'easeOut' }}
+            >
+              <ul>
+                {['home', 'about', 'skills', 'projects', 'education', 'employment', 'contact'].map((item) => (
+                  <li key={item}>
+                    <a href={`#${item}`} onClick={toggleMenu}>
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          )}
+        </div>
       </div>
     </nav>
   );
