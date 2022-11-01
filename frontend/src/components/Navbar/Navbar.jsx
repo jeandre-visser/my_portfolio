@@ -6,9 +6,10 @@ import  Hamburger from 'hamburger-react';
 
 
 const variants = {
-  open: { opacity: 1, x: 0, transition: {duration: 0.9, ease: 'easeOut'}},
-  closed: { opacity: 0, x: "-100%", transition: { duration: 0.9, ease: 'easeOut'}}
+  open: { opacity: [0, 1], transition: {duration: 0.7, ease: 'easeOut'}, x: [-300, 0] },
+  closed: { opacity: [1, 0], x: [0, -300], transition: { duration: 0.7}, ease: 'easeOut'}
 }
+
 
 const Navbar = () => {
 
@@ -39,13 +40,10 @@ const Navbar = () => {
           toggle={setOpen} 
           easing="ease-in"
         />
-        <div className="app__navbar-menu" onClick={toggleMenu}>
-            {open && (
+        <div className="app__navbar-menu" >
             <motion.div
-            animate={open ? "open" : "closed"}
+            animate={open ? variants.open : variants.closed}
             variants={variants}
-              // whileInView={{ x: [-300, 0] }}
-              // transition={{ duration: 0.9, ease: 'easeOut' }}
             >
               <ul>
                 {['home', 'about', 'skills', 'projects', 'education', 'employment', 'contact'].map((item) => (
@@ -57,7 +55,6 @@ const Navbar = () => {
                 ))}
               </ul>
             </motion.div>
-          )}
         </div>
       </div>
     </nav>
