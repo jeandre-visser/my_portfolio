@@ -3,6 +3,8 @@ import './Header.scss';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
 import { AppWrapper } from '../../wrapper';
+import { BsCodeSquare } from 'react-icons/bs';
+import { FaLeaf } from 'react-icons/fa';
 
 const scaleVariants = {
   whileInView: {
@@ -31,42 +33,39 @@ const Header = () => {
               <h1 className="head-text" style={{ textAlign: 'right'}} >Jeandre</h1>
             </div>
           </div>
-          <div className="tag-cmp app__flex">
-            <p className="p-text">Web Developer</p>
-            <p className="p-text">Environmentalist</p>
+          <div className="tag-cmp">
+            <p className="p-text">Web Developer <BsCodeSquare /> </p>
+            <p className="p-text">Environmentalist <FaLeaf /></p>
           </div>
         </div>
       </motion.div>
-      
-      <div className="app__header-middle">
-        <motion.div
-          className="app__header-img"
-          whileInView={{ opacity: [0, 1]}}
-          transitions={{ duration: 4, delayChildren: 2 }}      
-        >
-          <img src={images.profile} alt="profile_logo" />
-          <motion.img
-          className="profile_ring"
-          whileInView={{ scale: [0, 1]}}
-          transitions={{ duration: 4, ease: 'easeInOut' }}
-          src={images.ring}
-          alt="profile_ring"     
-          />
-        </motion.div>
+    
+      <motion.div
+        className="app__header-img"
+        whileInView={{ opacity: [0, 1]}}
+        transitions={{ duration: 4, delayChildren: 2 }}      
+      >
+        <img src={images.profile} alt="profile_logo" />
+        <motion.img
+         className="profile_ring"
+         whileInView={{ scale: [0, 1]}}
+         transitions={{ duration: 4, ease: 'easeInOut' }}
+         src={images.ring}
+         alt="profile_ring"     
+        />
+      </motion.div>
 
-        <motion.div
-          variant={scaleVariants}
-          whileInView={scaleVariants.whileInView}
-          className="app__header-circles"
-        >
-          {[ images.redux, images.react, images.sass].map((circle, index) => (
-            <div className="circle-cmp app__flex" key={`circle-${index}`}>
-              <img src={circle} alt="circle" />
-            </div> 
-          ))}
-        </motion.div>
-
-      </div>
+      <motion.div
+        variant={scaleVariants}
+        whileInView={scaleVariants.whileInView}
+        className="app__header-circles"
+      >
+        {[ images.redux, images.react, images.sass].map((circle, index) => (
+          <div className="circle-cmp app__flex" key={`circle-${index}`}>
+            <img src={circle} alt="circle" />
+          </div> 
+        ))}
+      </motion.div>
 
     </div>  
   )
