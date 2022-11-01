@@ -58,7 +58,6 @@
   .badge-cmp, .tag-cmp {
     background: #f4ce6d;
     padding: 1.2rem 2.5rem;
-    border: var(--white-color);
     border-radius: 30px;
     width: auto;
     flex-direction: row;
@@ -74,13 +73,20 @@
   .tag-cmp {
     margin-top: 2.5rem;
     flex-direction: column;
-
+    
     p {
       text-transform: uppercase;
       text-align: right;
       width: 100%;
     }
+
+    svg {
+      position: relative;
+      top: 1.5px;
+    }
   }
+
+
 
   @media screen and (max-width: 1200px) {
     justify-content: flex-start;
@@ -122,8 +128,8 @@
   }
 
   div:nth-child(3) {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
   }
 
   @media screen and (min-width: 2000px) {
@@ -138,8 +144,8 @@
     }
 
     div:nth-child(3) {
-      width: 180px;
-      height: 180px;
+      width: 220px;
+      height: 220px;
     }
   }
   
