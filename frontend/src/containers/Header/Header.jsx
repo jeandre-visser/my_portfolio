@@ -28,8 +28,13 @@ const Header = () => {
       >
         <div className="app__header-badge">
           <div className="badge-cmp app__flex">
-            <div style={{ marginLeft: 25}}>
-              <p className="p-text">Welcome! My name is</p>
+              <div className="app__header-title">
+                <h1 className="head-text" style={{ fontSize: "2.5rem"}}>Welcome!</h1>
+              </div>
+          </div>
+          <div className="badge-cmp app__flex">
+            <div>
+              <p className="p-text" style={{ textAlign: 'right'}}>My name is,</p>
               <h1 className="head-text" style={{ textAlign: 'right'}} >Jeandre</h1>
             </div>
           </div>
@@ -60,7 +65,7 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        {[ images.redux, images.react, images.sass].map((circle, index) => (
+        {[ images.react, images.vscode, images.sass].map((circle, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
             <img src={circle} alt="circle" />
           </div> 
