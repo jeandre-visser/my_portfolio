@@ -21,7 +21,7 @@ const Skills = () => {
   return (
     <>
       <h2 className="head-text">
-        <span>Discover</span> My Skills 
+        <span style={{ color: "var(--orange-color"}}>Discover</span> My Skills 
       </h2>
       <div className="app__skills-container">
         <motion.div className="app__skills-list">

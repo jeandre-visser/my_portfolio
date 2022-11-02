@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <>
     <h2 className="head-text">
-      <span style={{ color: 'var(--orange-color'}}>Explore </span>My Projects 
+      <span>Explore </span>My Projects 
     </h2>
 
     <motion.div
