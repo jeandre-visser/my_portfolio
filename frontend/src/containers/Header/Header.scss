@@ -13,6 +13,7 @@
   flex-direction: row;
   padding: 7rem 0 6rem;
   top: 3rem;
+  gap: 5rem;
 
   @media screen and (min-width: 2000px) {
     padding-top: 9rem;
@@ -24,10 +25,12 @@
 
   @media screen and (max-width: 1200px) {
     flex-direction: column;
+    padding: 3rem 0 2rem;
+    gap: 0;
   }
 
   @media screen and (max-width: 450px) {
-    padding: 5rem 1.5rem 2rem;
+    padding: 2rem 0rem 1rem;
   }
 }
 
@@ -39,11 +42,16 @@
   justify-content: flex-start;
   height: 100%;
 
+
   margin: 0 2rem;
 
   @media screen and (max-width: 2000px) {
     margin-right: 0;
     width: 100%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin: 0;
   }
 }
 
@@ -51,9 +59,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  width: 90%;
+  width: 100%;
   flex-direction: column;
   margin-top: 2.5rem;
+  // margin-right: 1rem;
+  gap: 3rem;
 
   .badge-cmp, .tag-cmp {
     background: #f4ce6d;
@@ -65,13 +75,12 @@
     font-weight: bolder;
 
     @media screen and (max-width: 375px) {
-      padding: 0.85rem 1.5rem;
+      padding: 1.2rem;
     }
     
   }
 
   .tag-cmp {
-    margin-top: 2.5rem;
     flex-direction: column;
     
     p {
@@ -89,8 +98,13 @@
 
 
   @media screen and (max-width: 1200px) {
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  @media screen and (max-width: 710px) {
+    flex-direction: column;
   }
 }
 
@@ -100,9 +114,8 @@
   flex: 0.7;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 1.5rem;
   height: 100%;
-  gap: 2rem;
+  gap: 3rem;
 
   div {
     width: 120px;
@@ -148,12 +161,51 @@
       height: 220px;
     }
   }
-  
+
   @media screen and (max-width: 1200px) {
     flex-direction: row;
+    gap: 5rem;
+  }
+  
+  @media screen and (max-width: 640px) {
+    flex-direction: row;
     width: 100%;
-    flex-wrap: wrap;
-    margin-left: 0;
+    gap: 0;
+
+    div:nth-child(1) {
+      width: 100px;
+      height: 100px;
+    }
+  
+    div:nth-child(2) {
+      margin: 1.75rem;
+      width: 120px;
+      height: 120px;
+    }
+  
+    div:nth-child(3) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+
+    div:nth-child(1) {
+      width: 70px;
+      height: 70px;
+    }
+  
+    div:nth-child(2) {
+      
+      width: 90px;
+      height: 90px;
+    }
+  
+    div:nth-child(3) {
+      width: 70px;
+      height: 70px;
+    }
   }
 }
 
