@@ -27,8 +27,8 @@ const Header = () => {
         transitions={{ duration: 4, ease: 'easeInOut' }}
       >
         <div className="app__header-badge">
-          <div className="badge-cmp app__flex">
-            <h1 className="head-text" id="welcome-badge" >Welcome!</h1>
+          <div className="badge-cmp app__flex" id="welcome-badge">
+            <h1 className="head-text" id="welcome">Welcome!</h1>
           </div>
           <div className="badge-cmp app__flex" id="middle-badge">
             <div>
