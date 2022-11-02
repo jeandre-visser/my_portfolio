@@ -13,7 +13,7 @@
   flex-direction: row;
   padding: 7rem 0 6rem;
   top: 3rem;
-  gap: 5rem;
+  gap: 4rem;
 
   @media screen and (min-width: 2000px) {
     padding-top: 9rem;
@@ -57,24 +57,73 @@
 
 .app__header-badge {
   display: flex;
-  justify-content: flex-end;
   align-items: flex-end;
   width: 100%;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 2rem;
   gap: 3rem;
+
+  #welcome-badge {
+
+    #welcome {
+      font-size: 2.5rem;
+  
+      @media screen and (max-width: 1200px) {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media screen and (max-width: 975px) {
+      display: none;
+    }
+  }
+
+  #middle-badge {
+    margin-right: 3rem;
+
+    @media screen and (max-width: 1200px) {
+      margin: 2rem;
+    }
+
+    #name-badge-small {
+
+      @media screen and (min-width: 975px) {
+        display: none;
+      }
+
+      @media screen and (max-width: 975px) {
+        display: inline;
+      }
+    }
+
+    #name-badge-large {
+
+      @media screen and (min-width: 975px) {
+        display: inline;
+      }
+
+      @media screen and (max-width: 975px) {
+        display: none;
+      }
+    }
+  }
 
   .badge-cmp, .tag-cmp {
     background: #f4ce6d;
-    padding: 1.2rem 2.3rem;
+    padding: 1.5rem 2.5rem;
     border-radius: 30px;
     width: auto;
     flex-direction: row;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     font-weight: bolder;
+    text-align: right;
 
     @media screen and (max-width: 375px) {
       padding: 1.2rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+      padding: 1.2rem 2rem;
     }
     
   }
@@ -99,7 +148,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 0;
   }
 
@@ -120,7 +169,7 @@
   div {
     width: 120px;
     height: 120px;
-    background: var(--white-color);
+    background: rgb(33, 32, 32);
     border-radius: 50%;
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
 
@@ -130,8 +179,8 @@
   }
 
   div:nth-child(1) {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
   }
 
   div:nth-child(2) {
@@ -141,14 +190,14 @@
   }
 
   div:nth-child(3) {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
   }
 
   @media screen and (min-width: 2000px) {
     div:nth-child(1) {
-      width: 220px;
-      height: 220px;
+      width: 260px;
+      height: 260px;
     }
 
     div:nth-child(2) {
@@ -157,8 +206,8 @@
     }
 
     div:nth-child(3) {
-      width: 220px;
-      height: 220px;
+      width: 260px;
+      height: 260px;
     }
   }
 
@@ -227,6 +276,10 @@
     }
 
     @media screen and (max-width: 1200px) {
+      width: 500px;
+    }
+
+    @media screen and (max-width: 750px) {
       width: 400px;
     }
 
