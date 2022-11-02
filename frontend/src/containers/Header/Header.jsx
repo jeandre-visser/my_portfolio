@@ -29,7 +29,7 @@ const Header = () => {
         <div className="app__header-badge">
           <div className="badge-cmp app__flex">
             <div style={{ marginLeft: 25}}>
-              <p className="p-text">Welcome, my name is</p>
+              <p className="p-text">Welcome! My name is</p>
               <h1 className="head-text" style={{ textAlign: 'right'}} >Jeandre</h1>
             </div>
           </div>

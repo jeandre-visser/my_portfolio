@@ -61,17 +61,16 @@
   align-items: flex-end;
   width: 100%;
   flex-direction: column;
-  margin-top: 2.5rem;
-  // margin-right: 1rem;
+  margin-top: 3rem;
   gap: 3rem;
 
   .badge-cmp, .tag-cmp {
     background: #f4ce6d;
-    padding: 1.2rem 2.5rem;
+    padding: 1.2rem 2.3rem;
     border-radius: 30px;
     width: auto;
     flex-direction: row;
-    box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     font-weight: bolder;
 
     @media screen and (max-width: 375px) {
@@ -87,6 +86,7 @@
       text-transform: uppercase;
       text-align: right;
       width: 100%;
+      line-height: 1.8;
     }
 
     svg {
@@ -95,12 +95,12 @@
     }
   }
 
-
-
   @media screen and (max-width: 1200px) {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    gap: 2rem;
+    margin-top: 0;
   }
 
   @media screen and (max-width: 740px) {
