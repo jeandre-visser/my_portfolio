@@ -28,9 +28,7 @@ const Header = () => {
       >
         <div className="app__header-badge">
           <div className="badge-cmp app__flex">
-              <div className="app__header-title">
-                <h1 className="head-text" style={{ fontSize: "2.5rem"}}>Welcome!</h1>
-              </div>
+            <h1 className="head-text" id="welcome-badge" >Welcome!</h1>
           </div>
           <div className="badge-cmp app__flex" id="middle-badge">
             <div>
