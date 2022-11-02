@@ -32,9 +32,9 @@ const Header = () => {
                 <h1 className="head-text" style={{ fontSize: "2.5rem"}}>Welcome!</h1>
               </div>
           </div>
-          <div className="badge-cmp app__flex">
+          <div className="badge-cmp app__flex" id="middle-badge">
             <div>
-              <p className="p-text" style={{ textAlign: 'right'}}>My name is,</p>
+              <p className="p-text" style={{ textAlign: 'right'}}>My name is</p>
               <h1 className="head-text" style={{ textAlign: 'right'}} >Jeandre</h1>
             </div>
           </div>
