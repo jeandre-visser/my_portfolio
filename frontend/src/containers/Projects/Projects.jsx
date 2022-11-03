@@ -19,6 +19,16 @@ const Projects = () => {
     })
   }, [])
 
+    const [isHovering, setIsHovering] = useState(false);
+
+    const handleMouseEnter = () => {
+      setIsHovering(true);
+    };
+
+    const handleMouseLeave = () => {
+      setIsHovering(false);
+    };
+
   return (
     <>
     <h2 className="head-text">
@@ -31,7 +41,13 @@ const Projects = () => {
       whileInView={{ y: [200, 0], opacity: [0, 1] }}
     >
       {projects.map((project, index) => (
-        <div className="app__project-item app__flex" key={index} style={{ boxShadow: `${project.shadow}`}}>
+        <div 
+          className="app__project-item app__flex" 
+          key={index} 
+          style={{ boxShadow: isHovering ? project.shadow : '' }}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <div className="app__project-img app__flex">
             <img src={urlFor(project.imgUrl)} alt={project.name} />
           </div>
