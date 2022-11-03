@@ -7,9 +7,9 @@
 .app__skills-container {
   display: flex;
   margin-top: 2rem;
-  width: 90%;
+  width: 100%;
   flex-direction: row;
-  padding: 0 4rem;
+  padding: 0 3rem;
   
   @media screen and (max-width: 920px) {
     flex-direction: column;
@@ -21,7 +21,6 @@
   flex: 1;
   display: flex;
   flex-wrap: wrap;
-  margin-right: 4rem;
   justify-content: flex-start;
   align-items: flex-start;
 
