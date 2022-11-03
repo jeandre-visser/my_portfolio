@@ -22,10 +22,6 @@
     cursor: pointer;
     transition: all 0.2s ease;
 
-    &:hover {
-      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    }
-
     @media screen and (min-width: 2000px) {
       width: 400px; 
       border-radius: 1rem;
@@ -62,8 +58,8 @@
   transition: all 0.2s ease;
 
   div {
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.9);
     margin: 1rem;
@@ -78,8 +74,8 @@
     }
 
     @media screen and (max-width: 450px) {
-      height: 40px;
-      width: 40px;
+      height: 30px;
+      width: 30px;
     }
   }
 }
