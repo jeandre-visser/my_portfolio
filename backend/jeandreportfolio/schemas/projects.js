@@ -14,6 +14,13 @@ export default {
         title: 'Description',
         type: 'string',
       },
+
+      {
+        name: 'shadow',
+        title: 'Box Shadow Color',
+        type: 'string',
+      },
+
       {
         name: 'projectLink',
         title: 'Project Link',
@@ -31,19 +38,6 @@ export default {
         options: {
           hotspot: true,
         },
-      },
-   
-      {
-        name: 'tags',
-        title: 'Tags',
-       type:'array',
-       of: [
-         {
-           name:'tag',
-           title:'Tag',
-           type:'string'
-         }
-       ]
       },
      
     ],
