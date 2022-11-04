@@ -20,7 +20,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">
+      <h2 className="head-text app__top">
         <span style={{ color: "var(--orange-color"}}>Discover</span> My Skills & Tools
       </h2>
       <div className="app__skills-container">

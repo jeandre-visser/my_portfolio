@@ -21,7 +21,7 @@ const Projects = () => {
 
   return (
     <>
-    <h2 className="head-text">
+    <h2 className="head-text app__top">
       <span>Explore </span>My Projects 
     </h2>
 
