@@ -28,7 +28,7 @@ const Projects = () => {
     <motion.div
       className="app__project-portfolio"
       transition={{ duration: 1, ease: 'easeInOut', delayChildren: 1}}
-      whileInView={{ y: [200, 0], opacity: [0, 1] }}
+      whileInView={{ y: [150, 0], opacity: [0, 1] }}
     >
       {projects.map((project, index) => (
         <div 
@@ -41,7 +41,7 @@ const Projects = () => {
           </div>
           <div className="app__flex app__project-content">
             <h4 className="bold-text">{project.title}</h4>
-            <p className="p-text" style={{ marginTop: 12, fontSize: '0.9rem' }}>{project.description}</p>
+            <p className="p-text" style={{ marginTop: 12 }}>{project.description}</p>
           <div
               className="app__project-hover app__flex"
             >
