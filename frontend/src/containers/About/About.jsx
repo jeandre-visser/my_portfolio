@@ -17,7 +17,7 @@ const About = () => {
 
   return (
     <>
-    <h2 className="head-text" id="heading">
+    <h2 className="head-text app__top">
       Aspiring <span>web developer</span> with a <span style={{color: 'var(--orange-color'}}>focus</span> on:
     </h2>
     <div className="app__profiles">
