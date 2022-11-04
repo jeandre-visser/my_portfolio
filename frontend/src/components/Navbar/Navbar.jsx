@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import { images } from '../../constants';
 import './Navbar.scss'
 import { motion } from 'framer-motion';
-import  Hamburger from 'hamburger-react';
+import Hamburger from 'hamburger-react';
 
 
 const variants = {
-  open: { opacity: [0, 1], transition: {duration: 0.7, ease: 'easeOut'}, x: [-300, 0] },
-  closed: { opacity: [1, 0], x: [0, -300], transition: { duration: 0.7}, ease: 'easeOut'}
+  open: { opacity: [0, 1], transition: {duration: 0.4, ease: 'easeOut'}, x: [-300, 0] },
+  closed: { opacity: [1, 0], x: [0, -300], transition: { duration: 0.4}, ease: 'easeOut'}
 }
 
 
@@ -38,7 +38,7 @@ const Navbar = () => {
           rounded
           toggled={open} 
           toggle={setOpen} 
-          easing="ease-in"
+          // easing="ease-in"
         />
         <div className="app__navbar-menu" >
             <motion.div
