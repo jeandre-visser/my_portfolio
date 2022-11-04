@@ -45,7 +45,7 @@ const About = () => {
         
       </div>
 
-      <p className='p-text'>My name is <strong>Jeandre Visser</strong>, I am in search of a career in full-stack or front-end development. I am eager to continue learning and collaborate with other developers of various experience levels. I am a graduate from <a href="https://www.lighthouselabs.ca/">Lighthouse Labs</a>, a program that involved a fast-paced learning environment comprised of small to large projects using popular front and back-end languages. I am also a former project manager at an environmental engineering consulting company with transferable skills in problem-solving and project management that will help to kickstart a new career in programming!</p>
+      <p className='p-text'>My name is <strong>Jeandre Visser</strong>, in search of a career in full-stack or front-end development. I am eager to continue learning and collaborate with other developers of various experience levels. As a graduate from <a href="https://www.lighthouselabs.ca/">Lighthouse Labs</a>, I was involved in a fast-paced learning environment comprised of small to large projects using popular front and back-end languages. I also transitioned from the oil and gas industry as a former project manager at an environmental engineering consulting company with transferable skills in problem-solving and project management that will help to kickstart a new career in programming!</p>
     </motion.div>
     </>
   )
