@@ -14,7 +14,7 @@ const contacts = [
 const Contact = () => {
   return (
     <>
-      <h2 className="head-text" id="heading">Get in <span style={{ color: 'var(--orange-color'}}>touch</span></h2>
+      <h2 className="head-text app__top">Get in <span style={{ color: 'var(--orange-color'}}>touch</span></h2>
       <motion.div className="app__contacts" 
         transition={{ duration: 1, ease: 'easeInOut' }}
         whileInView={{ y: [200, 0], opacity: [0, 1] }}
