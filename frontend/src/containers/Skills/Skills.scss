@@ -15,20 +15,18 @@
     flex-direction: column;
     width: 100%;
   }
+
+  @media screen and (max-width: 920px) {
+    padding: 0;
+  }
 }
 
 .app__skills-list {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-
-  @media screen and (max-width: 900px) {
-    margin-right: 0;
-    justify-content: center;
-    align-items: center;
-  }
+  justify-content: center;
+  align-items: center;
 }
 
 .app__skills-item {
@@ -59,7 +57,7 @@
       height: 200px;
     }
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 650px) {
       width: 80px;
       height: 80px;
     }
