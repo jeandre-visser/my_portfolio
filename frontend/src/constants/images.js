@@ -20,8 +20,10 @@ import github from '../assets/github.png';
 import resume from '../assets/resume.png';
 import linkedin from '../assets/linkedin.png';
 import footer from '../assets/footer.png';
+import vscode from '../assets/vscode.png';
 
 export default {
+  vscode,
   logo,
   profile,
   ring,
