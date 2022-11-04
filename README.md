@@ -1,9 +1,9 @@
-# Welcome to my Portfolio Site!
+# :file_folder: Welcome to my Portfolio Site!
 
 Check it out [here](https://jv-portfolio.netlify.app/)!
 
 To learn more about me, navigate through my portfolio web app and discover my:
-- :juggling: Skills 
+- :juggling_person: Skills
 - 👨‍💻 Other projects
 - :books: Education
 - 👨‍🔧 Employment history
