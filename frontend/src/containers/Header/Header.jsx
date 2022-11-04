@@ -5,6 +5,7 @@ import { images } from '../../constants';
 import { AppWrapper } from '../../wrapper';
 import { BsCodeSquare } from 'react-icons/bs';
 import { FaLeaf } from 'react-icons/fa';
+import { FiCoffee } from 'react-icons/fi';
 
 const scaleVariants = {
   whileInView: {
@@ -40,6 +41,7 @@ const Header = () => {
           <div className="tag-cmp">
             <p className="p-text">Web Developer <BsCodeSquare /> </p>
             <p className="p-text">Environmentalist <FaLeaf /></p>
+            <p className="p-text">Coffee Connoisseur <FiCoffee /></p>
           </div>
         </div>
       </motion.div>
