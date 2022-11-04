@@ -21,8 +21,18 @@ import resume from '../assets/resume.png';
 import linkedin from '../assets/linkedin.png';
 import footer from '../assets/footer.png';
 import vscode from '../assets/vscode.png';
+import canada from '../assets/canada.png';
+import africa from '../assets/africa.png';
+import coffee from '../assets/coffee.gif';
+import gym from '../assets/gym.gif';
+import outdoors from '../assets/outdoors.gif';
 
 export default {
+  coffee,
+  gym,
+  outdoors,
+  canada,
+  africa,
   vscode,
   logo,
   profile,
