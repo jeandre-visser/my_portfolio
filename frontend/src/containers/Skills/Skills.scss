@@ -66,6 +66,10 @@
   p {
     font-weight: bolder;
     margin-top: 0.4rem;
+
+    @media screen and (max-width: 450px) {
+      font-size: 0.9rem;
+    }
   }
 
   @media screen and (min-width: 2000px) {
