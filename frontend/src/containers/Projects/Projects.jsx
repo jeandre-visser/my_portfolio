@@ -11,7 +11,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "projects"]';
+    const query = '*[_type == "projects"] | order(_createdAt desc)';
 
     client.fetch(query)
     .then(data => {
