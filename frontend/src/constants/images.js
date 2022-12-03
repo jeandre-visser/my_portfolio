@@ -26,8 +26,10 @@ import africa from '../assets/africa.png';
 import coffee from '../assets/coffee.gif';
 import gym from '../assets/gym.gif';
 import outdoors from '../assets/outdoors.gif';
+import nutrimeals from '../assets/nutrimeals.png';
 
 export default {
+  nutrimeals,
   coffee,
   gym,
   outdoors,
