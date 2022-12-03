@@ -10,9 +10,9 @@ const App = () => {
       <Header />
       <About />
       <Skills />
+      <Employment />
       <Projects />
       <Education />
-      <Employment />
       <Contact />
     </div>
   )
