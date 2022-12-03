@@ -86,6 +86,7 @@
     }
 
     #name-badge-small {
+      white-space: nowrap;
 
       @media screen and (min-width: 975px) {
         display: none;

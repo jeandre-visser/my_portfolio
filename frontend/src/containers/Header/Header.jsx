@@ -40,7 +40,7 @@ const Header = () => {
           </div>
           <div className="tag-cmp">
             <p className="p-text">Full Stack Developer <BsCodeSquare /> </p>
-            <p className="p-text">Environmental Consultant <FaLeaf /></p>
+            <p className="p-text" style={{whiteSpace: 'nowrap' }} >Environmental Consultant <FaLeaf /></p>
             <p className="p-text">Coffee Connoisseur <FiCoffee /></p>
           </div>
         </div>
