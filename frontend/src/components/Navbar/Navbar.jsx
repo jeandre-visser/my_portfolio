@@ -46,7 +46,7 @@ const Navbar = () => {
             variants={variants}
             >
               <ul>
-                {['home', 'about', 'skills', 'projects', 'education', 'employment', 'contact'].map((item) => (
+                {['home', 'about', 'skills', 'employment', 'projects', 'education', 'contact'].map((item) => (
                   <li key={item}>
                     <a href={`#${item}`} onClick={toggleMenu}>
                       {item}
