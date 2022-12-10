@@ -71,6 +71,7 @@
 
 .app__employment-desc {
   line-height: 3;
+  white-space: nowrap;
 
   h2 {
     @media screen and (max-width: 900px) {
