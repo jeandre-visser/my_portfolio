@@ -1,11 +1,16 @@
 export default {
-  name: "projects",
-  title: "Projects",
+  name: "certifications",
+  title: "Certifications",
   type: "document",
   fields: [
     {
       name: "title",
       title: "Title",
+      type: "string",
+    },
+    {
+      name: "author",
+      title: "Author",
       type: "string",
     },
 
@@ -17,7 +22,7 @@ export default {
 
     {
       name: "courseLink",
-      title: "Project Link",
+      title: "Certification Link",
       type: "string",
     },
     {

@@ -11,14 +11,12 @@
   -webkit-backdrop-filter: blur(4px);
   position: fixed;
 
-
   .hamburger-react {
-    @media screen and (min-width: 975px) {
+    @media screen and (min-width: 1380px) {
       display: none;
     }
   }
 }
-
 
 .app__navbar-logo {
   display: flex;
@@ -27,11 +25,11 @@
   img {
     width: 200px;
 
-    @media screen and (min-width: 2000px){
+    @media screen and (min-width: 2000px) {
       width: 300px;
     }
 
-    @media screen and (max-width: 1075px){
+    @media screen and (max-width: 1075px) {
       width: 150px;
     }
   }
@@ -61,7 +59,7 @@
       padding: 0.1em 0;
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: 0;
@@ -72,7 +70,8 @@
         transition: opacity 300ms, transform 300ms;
       }
 
-      &:hover::after, &:focus::after {
+      &:hover::after,
+      &:focus::after {
         opacity: 1;
         transform: translate3d(0, 0.2em, 0);
       }
@@ -87,34 +86,31 @@
     }
   }
 
-  @media screen and (max-width: 975px) {
+  @media screen and (max-width: 1380px) {
     display: none;
   }
 }
 
 .app__navbar-menu {
-
-  
-
   div {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     z-index: 10;
-    
+
     padding: 1rem;
 
     width: 80%;
     height: 100vh;
-    
+
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
     background-color: var(--secondary-color);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    
+
     ul {
       padding: 0;
       list-style: none;

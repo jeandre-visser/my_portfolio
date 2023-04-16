@@ -1,11 +1,20 @@
-import React from 'react'
-import { About, Contact, Header, Projects, Skills, Education, Employment } from './containers/index';
-import { Navbar } from './components';
-import './App.scss';
+import React from "react";
+import {
+  About,
+  Contact,
+  Header,
+  Projects,
+  Skills,
+  Education,
+  Employment,
+} from "./containers/index";
+import { Navbar } from "./components";
+import "./App.scss";
+import Certifications from "./containers/Certifications/Certifications";
 
 const App = () => {
   return (
-    <div className="app" >
+    <div className="app">
       <Navbar />
       <Header />
       <About />
@@ -13,9 +22,10 @@ const App = () => {
       <Employment />
       <Projects />
       <Education />
+      <Certifications />
       <Contact />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
