@@ -7,6 +7,7 @@ import projects from './projects'
 import abouts from './abouts'
 import skills from './skills'
 import contact from './contact'
+import certifications from './certifications'
 
 
 
@@ -14,6 +15,7 @@ export default createSchema({
 
   name: 'default',
 
-  types: schemaTypes.concat([projects, abouts, skills, contact
+  types: schemaTypes.concat([projects, abouts, skills, contact,
+    certifications
   ]),
 })

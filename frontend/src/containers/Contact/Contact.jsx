@@ -39,7 +39,7 @@ const Contact = () => {
         whileInView={{ opacity: [0, 1] }}
       >
         <img src={images.footer} alt='logo'/>
-        <p className="p-text">Jeandre Visser<br/>2022</p>
+        <p className="p-text">Jeandre Visser<br/>2023</p>
       </motion.div>
 
     </>
