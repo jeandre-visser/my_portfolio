@@ -1,27 +1,42 @@
-import { AppWrapper } from '../../wrapper';
-import { images } from '../../constants';
-import { motion } from 'framer-motion';
-import './Contact.scss';
+import { AppWrapper } from "../../wrapper";
+import { images } from "../../constants";
+import { motion } from "framer-motion";
+import "./Contact.scss";
 
 const contacts = [
-  {title: 'Resume', url: 'https://resume.creddle.io/resume/9fih5w59z8y', img: images.resume},
-  {title: "GitHub", url: 'https://www.github.com/jeandre-visser', img: images.github},
-  {title: 'Email', url: 'mailto:jeandrev1414@gmail.com', img: images.email},
-  {title: 'LinkedIn', url: 'http://www.linkedin.com/in/jeandre-visser', img: images.linkedin},
-  {title: '+1 639-840-1087', img: images.phone},
-]
+  {
+    title: "Resume",
+    url: "https://resume.creddle.io/resume/9fih5w59z8y",
+    img: images.resume,
+  },
+  {
+    title: "GitHub",
+    url: "https://www.github.com/jeandre-visser",
+    img: images.github,
+  },
+  { title: "Email", url: "mailto:jeandrev1414@gmail.com", img: images.email },
+  {
+    title: "LinkedIn",
+    url: "http://www.linkedin.com/in/jeandre-visser",
+    img: images.linkedin,
+  },
+  { title: "+1 639-840-1087", img: images.phone },
+];
 
 const Contact = () => {
   return (
     <>
-      <h2 className="head-text app__top">Get in <span style={{ color: 'var(--orange-color'}}>touch</span></h2>
-      <motion.div className="app__contacts" 
-        transition={{ duration: 1, ease: 'easeInOut' }}
+      <h2 className="head-text app__top">
+        Get in <span style={{ color: "var(--orange-color" }}>touch</span>
+      </h2>
+      <motion.div
+        className="app__contacts"
+        transition={{ duration: 1, ease: "easeInOut" }}
         whileInView={{ y: [200, 0], opacity: [0, 1] }}
       >
         {contacts.map((contact, index) => (
-          <motion.div 
-            className="app__contact-card" 
+          <motion.div
+            className="app__contact-card"
             key={contact + index}
             whileHover={{ scale: [1, 1.05] }}
             transition={{ duration: 0.1 }}
@@ -35,15 +50,18 @@ const Contact = () => {
       </motion.div>
       <motion.div
         className="app__footer"
-        transition={{ duration: 2, ease: 'easeInOut'}}
+        transition={{ duration: 2, ease: "easeInOut" }}
         whileInView={{ opacity: [0, 1] }}
       >
-        <img src={images.footer} alt='logo'/>
-        <p className="p-text">Jeandre Visser<br/>2023</p>
+        <img src={images.footer} alt="logo" />
+        <p className="p-text">
+          Jeandre Visser
+          <br />
+          {new Date().getFullYear()}
+        </p>
       </motion.div>
-
     </>
-  )
-}
+  );
+};
 
-export default AppWrapper(Contact, 'contact');
+export default AppWrapper(Contact, "contact");

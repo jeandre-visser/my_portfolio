@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AppWrapper } from "../../wrapper";
 import { urlFor, client } from "../../client";
-import { BiLink } from "react-icons/bi";
 import { motion } from "framer-motion";
 import "./Certifications.scss";
 

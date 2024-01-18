@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import './About.scss';
-import { motion } from 'framer-motion';
-import { images } from '../../constants';
-import { urlFor, client } from '../../client';
-import { AppWrapper } from '../../wrapper';
-import { GoLocation } from 'react-icons/go';
+import React, { useState, useEffect } from "react";
+import "./About.scss";
+import { motion } from "framer-motion";
+import { images } from "../../constants";
+import { urlFor, client } from "../../client";
+import { AppWrapper } from "../../wrapper";
+import { GoLocation } from "react-icons/go";
 
 const hobbies = [
-  { title: 'hitting the gym', imgUrl: images.gym },
-  { title: 'enjoying outdoors', imgUrl: images.outdoors },
-  { title: 'drinking coffee', imgUrl: images.coffee },
+  { title: "hitting the gym", imgUrl: images.gym },
+  { title: "enjoying outdoors", imgUrl: images.outdoors },
+  { title: "drinking coffee", imgUrl: images.coffee },
 ];
 
 const About = () => {
@@ -23,14 +23,14 @@ const About = () => {
   return (
     <>
       <h2 className="head-text app__top">
-        <span>software developer</span> with a{' '}
-        <span style={{ color: 'var(--orange-color' }}>focus</span> on:
+        <span>software developer</span> with a{" "}
+        <span style={{ color: "var(--orange-color" }}>focus</span> on:
       </h2>
       <div className="app__profiles">
         {abouts.map((about, index) => (
           <motion.div
             whileInView={{ x: [-300, 0], opacity: [0, 1] }}
-            transitions={{ duration: 2, type: 'tween' }}
+            transitions={{ duration: 2, type: "tween" }}
             key={about.title + index}
             whileHover={{ scale: 1.05 }}
             className="app__profile-item"
@@ -45,12 +45,12 @@ const About = () => {
       <motion.div
         className="app__flex app__about-desc"
         whileInView={{ x: [300, 0], opacity: [0, 1] }}
-        transitions={{ duration: 2, type: 'tween' }}
+        transitions={{ duration: 2, type: "tween" }}
       >
         <div className="app__about-portrait">
           <img src={images.portrait} alt="portrait" id="portrait" />
           <h2>
-            Hello{' '}
+            Hello{" "}
             <span>
               <img
                 id="wave"
@@ -68,14 +68,14 @@ const About = () => {
         <p className="p-text">
           My name is <strong>Jeandre Visser</strong>, currently a Full Stack
           Developer at <a href="https://nutrimeals.ca/">Nutrimeals</a> and a
-          2022 graduate of the web development program at{' '}
+          2022 graduate of the full stack development program at{" "}
           <a href="https://www.lighthouselabs.ca/">Lighthouse Labs</a> that
           involved a fast-paced learning environment comprised of small to large
-          projects using popular front and back-end languages. I also
-          transitioned from the oil and gas industry as a former project manager
-          at an environmental engineering consulting company with transferable
-          skills in problem-solving and project management that serve me well in
-          my tech career!
+          projects using a variety of technologies, frameworks, and languages.
+          My skills have been developed through hands-on experience in a dynamic
+          startup environment. Thriving in a fast-paced setting, I've taken on
+          diverse responsibilities within a small team, showcasing rapid
+          learning and adaptability rooted in practical application.
         </p>
       </motion.div>
 
@@ -97,26 +97,26 @@ const About = () => {
 
       <h1
         className="app__hobby-title"
-        style={{ margin: '4rem 0 1rem', textAlign: 'center' }}
+        style={{ margin: "4rem 0 1rem", textAlign: "center" }}
       >
-        When I am not{' '}
-        <span style={{ color: 'var(--secondary-color)' }}>coding</span>, I am
+        When I am not{" "}
+        <span style={{ color: "var(--secondary-color)" }}>coding</span>, I am
         ...
       </h1>
       <div className="app__hobbies app__flex">
         {hobbies.map((hobby, index) => (
           <motion.div
             whileInView={{ y: [100, 0], opacity: [0, 1] }}
-            transitions={{ duration: 2, type: 'tween' }}
+            transitions={{ duration: 2, type: "tween" }}
             key={hobby.title + index}
             whileHover={{ scale: 1.05 }}
             className="app__profile-item"
-            style={{ margin: '1rem 3rem' }}
+            style={{ margin: "1rem 3rem" }}
           >
             <img src={hobby.imgUrl} alt={hobby.title} />
             <h2
               className="bold-text"
-              style={{ marginTop: 8, textTransform: 'capitalize' }}
+              style={{ marginTop: 8, textTransform: "capitalize" }}
             >
               {hobby.title}
             </h2>
@@ -127,4 +127,4 @@ const About = () => {
   );
 };
 
-export default AppWrapper(About, 'about');
+export default AppWrapper(About, "about");
