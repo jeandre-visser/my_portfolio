@@ -1,10 +1,19 @@
 import "./Employment.scss";
 import React from "react";
 import { motion } from "framer-motion";
-import { images } from "../../constants";
 import { AppWrapper } from "../../wrapper";
+import images from "../../constants/images";
 
 const jobs = [
+  {
+    title: "Full Stack Developer",
+    company: "Nurish'd",
+    industry: "Health and Wellness Services",
+    year: "2024 - Present",
+    location: "Calgary, Alberta, Canada",
+    imgUrl: images.nurishd,
+    shadow: "0px 0px 25px rgba(40, 224, 158, 1)",
+  },
   {
     title: "Jr. Full Stack Developer",
     company: "Nutrimeals",
