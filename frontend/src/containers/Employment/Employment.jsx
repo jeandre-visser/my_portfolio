@@ -6,7 +6,7 @@ import images from "../../constants/images";
 
 const jobs = [
   {
-    title: "Full Stack Developer",
+    title: "Intermediate Full Stack Developer",
     company: "Nurish'd",
     industry: "Health and Wellness Services",
     year: "2024 - Present",

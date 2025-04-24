@@ -67,7 +67,7 @@ const About = () => {
 
         <p className="p-text">
           My name is <strong>Jeandre Visser</strong>, currently a Full Stack
-          Developer at <a href="https://nutrimeals.ca/">Nutrimeals</a> and a
+          Developer at <a href="https://www.nurishd.store/">{`Nurish'd`}</a> and a
           2022 graduate of the full stack development program at{" "}
           <a href="https://www.lighthouselabs.ca/">Lighthouse Labs</a> that
           involved a fast-paced learning environment comprised of small to large
