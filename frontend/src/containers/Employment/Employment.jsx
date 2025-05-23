@@ -6,13 +6,13 @@ import images from "../../constants/images";
 
 const jobs = [
   {
-    title: "Intermediate Full Stack Developer",
+    title: "Int. Full Stack Developer",
     company: "Nurish'd",
-    industry: "Health and Wellness Services",
+    industry: "Food-as-Medicine Platform",
     year: "2024 - Present",
     location: "Calgary, Alberta, Canada",
     imgUrl: images.nurishd,
-    shadow: "0px 0px 25px rgba(40, 224, 158, 1)",
+    shadow: "0px 0px 25px #01b801",
   },
   {
     title: "Jr. Full Stack Developer",

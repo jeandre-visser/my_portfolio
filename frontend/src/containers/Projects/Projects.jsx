@@ -54,15 +54,17 @@ const Projects = () => {
                   <BiLink />
                 </motion.div>
               </a>
-              <a href={project.codeLink} target="_blank" rel="noreferrer">
-                <motion.div
-                  className="app__flex"
-                  whileHover={{ scale: [1, 0.9] }}
-                  transition={{ duration: 0.1}}             
-                >
-                  <BsGithub />
-                </motion.div>
-              </a>
+              {project.codeLink && (
+                <a href={project.codeLink} target="_blank" rel="noreferrer">
+                  <motion.div
+                    className="app__flex"
+                    whileHover={{ scale: [1, 0.9] }}
+                    transition={{ duration: 0.1}}             
+                  >
+                    <BsGithub />
+                  </motion.div>
+                </a>
+              )}
             </div>
           </div>
         </div>
